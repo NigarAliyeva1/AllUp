@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\AllUp\\AllUp.csproj": {}
+    "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\AllUp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\AllUp\\AllUp.csproj": {
+    "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\AllUp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\AllUp\\AllUp.csproj",
+        "projectUniqueName": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\AllUp.csproj",
         "projectName": "AllUp",
-        "projectPath": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\AllUp\\AllUp.csproj",
+        "projectPath": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\AllUp.csproj",
         "packagesPath": "C:\\Users\\nigar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\AllUp\\obj\\",
+        "outputPath": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nigar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,6 +53,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.9, )"
             }
           },
           "imports": [
@@ -74,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

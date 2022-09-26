@@ -9,6 +9,6 @@
         public List<Category> Children { get; set; }
         public Category Parent { get; set; }
         public int? ParentId { get; set; }
-
+        //public bool IsDeactive { get; set; }
     }
 }
