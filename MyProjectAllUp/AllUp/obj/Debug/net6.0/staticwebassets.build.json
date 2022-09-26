@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IzeRrd4UH8bXgp2BAudMNwf3RyXguFbg5NvNbHH5bOA=",
+  "Hash": "G6qBTuQR7Urmsi7ZE5d/iawLZyWcnpGUeNOQSrs6/9U=",
   "Source": "AllUp",
   "BasePath": "_content/AllUp",
   "Mode": "Default",
@@ -61079,6 +61079,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\wwwroot\\assets\\images\\fd5b9b07-98f0-4db6-b3aa-fb7e925e0372headphone.jpg",
+      "SourceId": "AllUp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\wwwroot\\",
+      "BasePath": "_content/AllUp",
+      "RelativePath": "assets/images/fd5b9b07-98f0-4db6-b3aa-fb7e925e0372headphone.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\fd5b9b07-98f0-4db6-b3aa-fb7e925e0372headphone.jpg"
     },
     {
       "Identity": "C:\\Users\\nigar\\OneDrive\\Masaüstü\\AllUp\\MyProjectAllUp\\AllUp\\wwwroot\\assets\\images\\flag\\1.jpg",

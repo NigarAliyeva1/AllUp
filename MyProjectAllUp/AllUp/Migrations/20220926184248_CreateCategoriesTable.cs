@@ -17,7 +17,8 @@ namespace AllUp.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsMain = table.Column<bool>(type: "bit", nullable: false),
-                    ParentId = table.Column<int>(type: "int", nullable: true)
+                    ParentId = table.Column<int>(type: "int", nullable: true),
+                    IsDeactive = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllUp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220918161340_CreateCategoriesTable")]
+    [Migration("20220926184248_CreateCategoriesTable")]
     partial class CreateCategoriesTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,6 +34,9 @@ namespace AllUp.Migrations
 
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeactive")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsMain")
                         .HasColumnType("bit");
