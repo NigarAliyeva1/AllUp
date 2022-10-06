@@ -1,0 +1,201 @@
+﻿@model Product
+
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header">
+                <h2>
+                    Create Product
+                </h2>
+                <ul class="header-dropdown m-r--5">
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="body">
+                <form method="post" enctype="multipart/form-data">
+
+                    <div id="PhotoBox" class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="Photos"></label>
+                            <input asp-for="Photos" class="filled-in chk-col-orange">
+                        </div>
+                        <div>
+                            <span asp-validation-for="Photos" class="col-red"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="Name" class="form-control">
+                            <label class="form-label" asp-for="Name"></label>
+                            <div>
+                                <span asp-validation-for="Name" class="col-red"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="Price" class="form-control">
+                            <label class="form-label" asp-for="Price"></label>
+                            <div>
+                                <span asp-validation-for="Price" class="col-red"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="Rate" class="form-control">
+                            <label class="form-label" asp-for="Rate"></label>
+                            <div>
+                                <span asp-validation-for="Rate" class="col-red"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="ProductDeatil.HasStock" class="filled-in chk-col-orange">
+                            <label asp-for="ProductDeatil.HasStock">Has Stock</label>
+                        </div>
+                        <div>
+                            <span asp-validation-for="ProductDeatil.HasStock" class="col-red"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="ProductDeatil.Tax" class="form-control">
+                            <label class="form-label" asp-for="ProductDeatil.Tax"></label>
+                        </div>
+                        <div>
+                            <span asp-validation-for="ProductDeatil.Tax" class="col-red"></span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="ProductDeatil.Tags" class="form-control">
+                            <label class="form-label" asp-for="ProductDeatil.Tags"></label>
+                        </div>
+                        <div>
+                            <span asp-validation-for="ProductDeatil.Tags" class="col-red"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="ProductDeatil.ProductCode" class="form-control">
+                            <label class="form-label" asp-for="ProductDeatil.ProductCode"></label>
+                        </div>
+                        <div>
+                            <span asp-validation-for="ProductDeatil.ProductCode" class="col-red"></span>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <input asp-for="ProductDeatil.Brand" class="form-control">
+                            <label class="form-label" asp-for="ProductDeatil.Brand"></label>
+                        </div>
+                        <div>
+                            <span asp-validation-for="ProductDeatil.Brand" class="col-red"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group form-float">
+                        <div class="form-line">
+                            <label asp-for="ProductDeatil.Description"></label>
+                            <textarea asp-for="ProductDeatil.Description" class="form-control"></textarea>
+                           
+                        </div>
+                        <div>
+                            <span asp-validation-for="ProductDeatil.Description" class="col-red"></span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="">
+                        <label>Main Category</label>
+                        <select class="form-control show-thick" id="mainCatId" name="mainCatId">
+                            @foreach (Category category in ViewBag.MainCategories)
+                            {
+                                <option value="@category.Id">@category.Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="">
+                        <label>Child Category</label>
+                        <div id="childCatId">
+                            <select class="form-control show-thick" name="childCatId">
+                                @foreach (Category category in ViewBag.ChildCategories)
+                                {
+                                    <option value="@category.Id">@category.Name</option>
+                                }
+                            </select>
+
+                        </div>
+                        
+                    </div>
+
+                    <br>
+                    <button type="submit" class="btn bg-deep-orange m-t-15 waves-effect">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Css{
+    <style>
+        .dropdown-menu.inner {
+            max-height: 200px !important
+        }
+    </style>
+    <link asp-append-version="true" href="~/admin/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+}
+    @section Scripts{
+    
+
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#ProductDeatil_Description'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
+    <script>
+        $(document).on('change', '#mainCatId', function () {
+            $.ajax({
+                url: "/Admin/Products/LoadChild/",
+                type: "GET",
+                data: {
+                    "mainId": $("#mainCatId").val(),
+                },
+                success: function (res) {
+                    $("#childCatId").empty();
+                    $("#childCatId").append(res);
+                }
+            })
+        })
+    </script>
+}

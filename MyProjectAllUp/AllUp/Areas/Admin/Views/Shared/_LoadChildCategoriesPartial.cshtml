@@ -1,0 +1,7 @@
+﻿@model List<Category>
+<select class="form-control show-thick" name="childCatId">
+    @foreach (Category category in Model)
+    {
+        <option value="@category.Id">@category.Name</option>
+    }
+</select>

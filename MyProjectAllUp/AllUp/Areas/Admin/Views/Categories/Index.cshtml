@@ -74,7 +74,7 @@
                                         
                                     </td>
                                     
-                                    @*<td>
+                                    <td>
                                         @if (item.IsDeactive)
                                         {
                                             <span class="text-danger">Passive</span>
@@ -84,22 +84,22 @@
                                             <span class="text-success">Active</span>
 
                                         }
-                                    </td>*@
-                                   @* <td>
+                                    </td>
+                                    <td>
                                         <div class="d-flex justify-content-end">
-                                            <a asp-action="Detail" asp-route-id="@item.Id" style="width:120px" class="btn btn-outline-warning mx-2 btn-rounded">Detail</a>
-                                            <a asp-action="Update" asp-route-id="@item.Id" style="width:120px" class="btn btn-outline-info mx-2 btn-rounded">Update</a>
+                                            <a asp-action="Detail" asp-route-id="@item.Id" style="width:120px" class="btn btn-warning">Detail</a>
+                                            <a asp-action="Update" asp-route-id="@item.Id" style="width:120px" class="btn btn-info">Update</a>
                                             @if (item.IsDeactive)
                                             {
-                                                <a asp-action="Activity" asp-route-id="@item.Id" style="width:120px" class="btn btn-outline-success mx-2 btn-rounded">Activate</a>
+                                                <a asp-action="Activity" asp-route-id="@item.Id" style="width:120px" class="btn btn-success">Activate</a>
                                             }
                                             else
                                             {
-                                                <a asp-action="Activity" asp-route-id="@item.Id" style="width:120px" class="btn btn-outline-danger mx-2 btn-rounded">Deactivate</a>
+                                                <a asp-action="Activity" asp-route-id="@item.Id" style="width:120px" class="btn btn-danger">Deactivate</a>
                                             }
                                         </div>
                                     </td>
-*@
+
                                 </tr>
                             }
 
