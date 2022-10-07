@@ -165,18 +165,18 @@ namespace AllUp.Areas.Admin.Controllers
 
         }
         public async Task<IActionResult> Detail(int? id)
-        {
-            if (id == null)
             {
-                return NotFound();
+                if (id == null)
+                {
+                    return NotFound();
+                }
+                Category? category =await _db.Categories.FirstOrDefaultAsync(x=>x.Id==id);
+                if (category==null)
+                {
+                    return BadRequest();
+                }
+                return View(category);
             }
-            Category? category =await _db.Categories.FirstOrDefaultAsync(x=>x.Id==id);
-            if (category==null)
-            {
-                return BadRequest();
-            }
-            return View(category);
-        }
     }
 
 }
